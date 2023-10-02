@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavra do Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Palavra do Dia</h1>
+        <div class="input-container">
+            <input type="text" id="guessInput" placeholder="Escreva aqui" maxlength="5">
+            <button onclick="testFunction()">Tentar</button>
+        </div>
+        <div id="guesses">
+            <div class="attempt" id="attempt1">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="attempt inactive" id="attempt2">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="attempt inactive" id="attempt3">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="attempt inactive" id="attempt4">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="attempt inactive" id="attempt5">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="C:\Users\QI\Pictures\Saved Pictures\congrats.jpg" alt="Congratulations Image" id="congratsImage">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
